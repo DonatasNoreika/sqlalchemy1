@@ -23,6 +23,6 @@ class Projektas(Base):
         self.price = price
 
     def __repr__(self):
-        return f"{self.id} {self.name} - {self.price}: {self.created_date}"
+        return f"{self.id}: {self.name} - {self.price}, {self.created_date}"
 
 Base.metadata.create_all(engine)
